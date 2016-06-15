@@ -1,0 +1,13 @@
+HW #1: Hello, World!|H001
+HW #2: Expressions and Types|H002
+HW #3: Conditional Statements|H003
+HW #4: Loops|H004
+HW #5: Functions|H005
+HW #6: Arrays|H006
+HW #7: Pointers|H007
+HW #8: Structures|H008
+HW #9: Preprocessor|H009
+PP #1: F/C Conversions|P001
+PP #2: Compression Filter|P002
+PP #3: Datebook|P003
+PP #4: Date ADT|P004

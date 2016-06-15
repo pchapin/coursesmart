@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE preferences SYSTEM 'http://java.sun.com/dtd/preferences.dtd'>
+
+<preferences EXTERNAL_XML_VERSION="1.0">
+  <root type="user">
+    <map />
+    <node name="com">
+      <map />
+      <node name="coursesmart">
+        <map />
+        <node name="preferences">
+          <map>
+            <entry key="savedPage" value="http://your.ballistichelmet.org:8888/01/" />
+            <entry key="publicPage" value="http://www.ecet.vtc.edu/~pchapin/c-course/" />
+          </map>
+        </node>
+      </node>
+    </node>
+  </root>
+</preferences>
+

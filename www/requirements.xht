@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!-- FILE         : requirements.html
+     LAST REVISED : 2004-10-14
+     AUTHOR       : CS-205, Group #2, Fall 2004
+     SUBJECT      : Project Requirements -->
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+
+  <head>
+    <meta name="ROBOTS" content="NOARCHIVE" />
+    <title>CourseSmart Requirments</title>
+  </head>
+
+  <body>
+    <p>
+      <a href="./">Back to project page</a>
+    </p>
+
+    <h1>CourseSmart Requirements</h1>
+
+    <hr />
+    <h2>General</h2>
+
+    <p>CourseSmart provides support for a single course with a small to moderate number of
+      students. If multiple courses need to be supported, multiple instances of the
+      CourseSmart server need to be run.</p>
+
+    <p>CourseSmart provides the following features:</p>
+
+    <ul>
+
+      <li>
+        <p>The instructor can provide course information in "units" consisting of some
+          course materials, an optional assignment, and an optional quiz.</p>
+      </li>
+
+      <li>
+        <p>Students can submit their assignments to the system where they are timestamped
+          and stored until the instructor or grader downloads them for grading. Students
+          can take quizzes on-line in a time frame specified by the instructor.</p>
+      </li>
+
+      <li>
+        <p>The instructor can create one or more discussion boards and students can post
+          messages to these boards.</p>
+      </li>
+
+      <li>
+        <p>Students can view their grades using the system. The result of an on-line quiz
+          is automatically entered into the grade book.</p>
+      </li>
+
+      <li>
+        <p>The instructor can define a glossary of term/definition pairs that the
+          CourseSmart server automatically injects into certain documents.</p>
+      </li>
+
+    </ul>
+
+    <p>In addition CourseSmart provides a well defined protocol between the client and the
+      server, opening up the possibility of independent, specialized implementations of
+      either component.</p>
+
+    <p>Users can have one of three predefined roles: Instructors, Graders, and Students. A
+      user is allowed to have multiple roles. An Instructor user is predefined, but
+      additional users can be assigned the instructor role. It is also allowed to have
+      multiple users with the grader role.</p>
+
+    <p>Instructors have full access to the system and are allowed to make any changes.
+      Graders have largely the same access as students except that they can download
+      submitted assignments and modify the entire grade book. Students have no access to
+      the user database, no access to the grade book (except for read-only access to their
+      own grades), and can modify only their assignment submissions (up to the due date).</p>
+
+    <hr />
+    <h2>Use-Cases</h2>
+
+    <p>
+      <i>The following use-cases are highly abbreviated.</i>
+    </p>
+
+    <h3>General</h3>
+    <ul>
+      <li>Log In</li>
+      <li>Log Out</li>
+    </ul>
+
+    <h3>Administrative</h3>
+    <ul>
+      <li>Add Single User</li>
+      <li>Add Multiple Users</li>
+      <li>Remove Single User</li>
+      <li>Remove Multiple Users</li>
+      <li>Edit User Information</li>
+      <li>View User Information</li>
+    </ul>
+
+    <h3>Course Materials</h3>
+    <ul>
+      <li>Edit Unit List</li>
+      <li>Edit Unit Materials</li>
+      <li>View Unit List</li>
+      <li>View Unit Materials</li>
+      <li>Take Unit Quiz</li>
+      <li>Edit Global Glossary</li>
+    </ul>
+
+    <h3>Submitting Assignments</h3>
+    <ul>
+      <li>Submit Assignment</li>
+      <li>Edit Submission</li>
+      <li>Download Unit Submissions</li>
+    </ul>
+
+    <h3>Discussion Boards</h3>
+    <ul>
+      <li>Edit Discussion List</li>
+      <li>View Discussion List</li>
+      <li>Edit Discussion</li>
+      <li>Read Discussion</li>
+      <li>Post Message</li>
+    </ul>
+
+    <h3>Gradebook</h3>
+    <ul>
+      <li>Enter Grades</li>
+      <li>View Grades</li>
+      <li>View Class Grade Summary</li>
+    </ul>
+
+    <hr />
+    <h2>Non-Functional Requirements</h2>
+
+    <h3>Platform</h3>
+
+    <p>The CourseSmart server should run on Solaris/Unix. It should be as portable to
+      other Unix systems as reasonably feasible but it need not run on any other Unix
+      system at this time. The client should run on modern Microsoft Windows systems
+      (2000, XP). Wide client portability is desirable.</p>
+
+    <h3>Performance</h3>
+
+    <p>Command response times should be short enough so that interactive users are not
+      annoyed by any delays. In general delays should limited to network transfer time.</p>
+
+    <h3>Security</h3>
+
+    <p>It is important that students be unable to modify the course materials, see quizzes
+      before they are released by the instructor, see each other's submissions and grades,
+      or modify their own grades. The system should resist denial of service attacks by
+      students. The system need not be secure against a malicious instructor.</p>
+
+    <h3>Reliability</h3>
+
+    <p>The system should have good reliability characteristics. System down time should be
+      due, in most cases, to network failure or server host machine failure and not due to
+      server or client software failure.</p>
+
+    <h3>User Characteristics</h3>
+
+    <p>Students and instructors can be assumed to have average general computer skills. It
+      will be helpful if instructors are able to author HTML documents (outside of
+      CourseSmart). Users will interact with the system frequently.</p>
+
+    <h3>Scale</h3>
+
+    <p>The system should support a single course containing at most 50 to 100 students and
+      perhaps two or three instructors. Arbitrary static limits should be avoided when
+      possible so that the system has the potential of being pushed beyond these limits if
+      necessary.</p>
+
+    <h3>Data</h3>
+
+    <p>The system does not need to be compatible with any existing course support package;
+      data formats can be choosen free of constraints. Network protocols can also be
+      freely choosen.</p>
+
+    <h3>Internationalization</h3>
+
+    <p>There are no internationalization requirements.</p>
+
+    <h3>Environmental</h3>
+
+    <p>There are no environmental requirements.</p>
+
+    <h3>Expected Changes</h3>
+
+    <p>Support for multiple courses and support for other client platforms are the most
+      likely changes.</p>
+
+    <h3>Delivery Date</h3>
+
+    <p>Early December 2004. Lateness is impossible.</p>
+
+    <hr />
+    <address>CS-205, Group #2, Fall 2004</address>
+
+    <a href="./">Back to project page</a>
+  </body>
+</html>

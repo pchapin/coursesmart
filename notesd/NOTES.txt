@@ -1,0 +1,12 @@
+
+pchapin (March 26, 2001)
+
+I had my spring 1996 CS-212 class work on this as a class project. It
+was at best only partially successful. Is it worth continuing with this
+work? Or not? I'm not sure. I notice that there is a lack of design
+documents so it might take me some work to reconstruct the design from
+memory (and the source -- such as it is).
+
+This subproject is not directly related to CourseSmart. However, it does
+occupy a similar solution space. This subproject may or may not be useful
+in the future. However, it seems worth keeping for now just in case.

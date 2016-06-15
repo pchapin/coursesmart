@@ -1,0 +1,34 @@
+
+This file contains a list of server TODO items. The items in this list are in no particular
+order of priority, importance, or difficulty.
+
++ Add a facility to time-out network connections in case the client vanishes without a trace.
+
++ Build unit test programs for Logger, UserData, and the various other main server classes.
+
++ Review the use of the Logger and verify that logging is being done in all appropriate places.
+
++ Review the use of the FileSystem lock and verify that it is being used in all appropriate
+  places.
+
++ Improve error handling in response to file system problems.
+
++ Improve error handling in response to malformed client requests or invalid data in client
+  requests (currently invalid data often causes a server crash). Investigate the idea of doing a
+  validating parse of the client request messages.
+
++ Modify the CourseSmart protocol so that the server sends a banner message announcing itself
+  and the CourseSmart protocol version in use. Perhaps something like
+
+  <response type="banner" id="0" status="success">
+    <protocol-version>1.0</protocol-version>
+    <server-id>UVM's CourseSmart v0.01</server-id>
+  </response>
+
+  The client would need to be modified to expect this message. Probably it should also
+  (initially?) send a banner request with similar information. That way clients and servers that
+  support multiple protocol versions would be possibilities.
+
++ If there is an error parsing the CourseSmart protocol, the server never bothers to send back
+  an error reponse to the client. This is a problem because the client will always expect some
+  kind of response from the server (success or failure).

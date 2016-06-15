@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="calpahtml">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/calpahtml.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

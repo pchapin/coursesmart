@@ -1,0 +1,3 @@
+Welcome to CourseSmart!|01
+Information for Students|02
+Information for Instructors|03
